@@ -4,8 +4,8 @@ import Lobby from "./pages/Lobby";
 import GameBoard from "./pages/GameBoard";
 import io from "socket.io-client";
 const socket = io.connect("https://tic-tac-toe-backend-cgfs.onrender.com", {
-  withCredentials: true,
-  );
+  withCredentials: true, // Send credentials
+});
 
 function App() {
   return (
